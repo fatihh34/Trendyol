@@ -29,8 +29,19 @@ public class P03_UrunAramaSayfasi {
 //    @FindBy(xpath = "//*[@class='favorite-button']")
 //    public WebElement besinciUrununFavoriButonu;
 
-    @FindBy(xpath = "(//*[@class='i-heart'])[3]")
+//    @FindBy(xpath = "(//*[@class='i-heart'])[3]")
+//    public WebElement besinciUrununFavoriButonu;
+
+    @FindBy(xpath = "//*[@class='fv']")
     public WebElement besinciUrununFavoriButonu;
+
+    @FindBy(xpath = "//*[text()='Favorilerim']")
+    public WebElement favoriler;
+
+
+
+    @FindBy(xpath = "(//*[@class='category-header navbar-first-cap'])[10]")
+    public WebElement deneme;
 
 
 

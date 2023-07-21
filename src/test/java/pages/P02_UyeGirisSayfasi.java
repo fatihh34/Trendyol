@@ -20,7 +20,7 @@ public class P02_UyeGirisSayfasi {
     public WebElement passwordAlani;
 
     @FindBy(xpath ="//*[@class='q-primary q-fluid q-button-medium q-button submit']")
-   public WebElement sifreyleGirisButonu;
+   public WebElement mailVeSifreIleLoginOlmaButonu;
 
     @FindBy(xpath = "//*[@class='modal-close']")
     public WebElement popup;
