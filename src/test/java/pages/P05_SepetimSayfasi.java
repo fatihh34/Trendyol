@@ -9,7 +9,6 @@ public class P05_SepetimSayfasi {
     public P05_SepetimSayfasi(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
     @FindBy(xpath = "(//*[@class='i-trash'])[1]")
     public WebElement sepettenKaldirmaButonu;
 

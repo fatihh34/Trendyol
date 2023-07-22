@@ -5,11 +5,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class P01_HomePage {
-    public P01_HomePage() {
+public class P01_AnaSayfa {
+    public P01_AnaSayfa() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-
     @FindBy (xpath ="//*[@alt='Trendyol']")
     public WebElement anasayfaTitle;
 

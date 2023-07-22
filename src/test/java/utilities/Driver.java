@@ -9,12 +9,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.time.Duration;
 
     public class Driver {
-
         private Driver() {
         }
-
         public static WebDriver driver;
-
         public static WebDriver getDriver() {
 
             if (driver == null) {
@@ -29,7 +26,6 @@ import java.time.Duration;
                         //options.addArguments("--remote-allow-origins=*");
                         driver = new ChromeDriver();
                         break;
-
                     case "firefox":
                         WebDriverManager.firefoxdriver().setup();
                         driver = new FirefoxDriver();
@@ -39,17 +35,13 @@ import java.time.Duration;
                         WebDriverManager.chromedriver().setup();
                         driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
                         break;
-
-
                 }
-
             }
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
             driver.manage().window().maximize();
             return driver;
         }
-
         public static void closeDriver() {
 
             if (driver != null) {

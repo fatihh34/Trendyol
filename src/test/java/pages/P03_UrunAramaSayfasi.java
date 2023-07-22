@@ -7,10 +7,8 @@ import utilities.Driver;
 
 public class P03_UrunAramaSayfasi {
     public P03_UrunAramaSayfasi(){
-
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
     @FindBy(xpath = "//*[text()='Şarj Cihazları & Kabloları']")
     public WebElement sarjCihazMenu;
 
@@ -20,17 +18,8 @@ public class P03_UrunAramaSayfasi {
     @FindBy(xpath = "(//*[@class='chckbox'])[1]")
     public WebElement samsungUrunleriAratildi;
 
-    //@FindBy(xpath = "(//*[@class='image-overlay-body'])[5]")
-    //*[@class='image-overlay-body'])[5]
-    //@FindBy(xpath = "(//*[@class='p-card-chldrn-cntnr card-border'])[5]")
     @FindBy(xpath = "(//*[@class='image-overlay-body'])[5]")
     public WebElement aramaSayfasiBesinciUrun;
-
-//    @FindBy(xpath = "//*[@class='favorite-button']")
-//    public WebElement besinciUrununFavoriButonu;
-
-//    @FindBy(xpath = "(//*[@class='i-heart'])[3]")
-//    public WebElement besinciUrununFavoriButonu;
 
     @FindBy(xpath = "//*[@class='fv']")
     public WebElement besinciUrununFavoriButonu;
@@ -38,10 +27,6 @@ public class P03_UrunAramaSayfasi {
     @FindBy(xpath = "//*[text()='Favorilerim']")
     public WebElement favoriler;
 
-
-
-    @FindBy(xpath = "(//*[@class='category-header navbar-first-cap'])[10]")
-    public WebElement deneme;
 
 
 

@@ -11,7 +11,6 @@ public class P04_FavorilerimSayfasi {
     }
     @FindBy(xpath = "(//*[@class='image-overlay-body'])[1]")
     public WebElement begenilenUrun;
-
     @FindBy(xpath = "//*[text()='Sepete Ekle']")
     public WebElement sepeteEkle;
 

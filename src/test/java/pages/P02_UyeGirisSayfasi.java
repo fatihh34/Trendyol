@@ -7,14 +7,10 @@ import utilities.Driver;
 
 public class P02_UyeGirisSayfasi {
     public P02_UyeGirisSayfasi(){
-
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
     @FindBy(xpath = "//*[@id='login-email']")
-    //*[@class='hb-AxiLy ejxxJp s5chd9hdr6s']
     public WebElement emailAlani;
-
 
     @FindBy(xpath = "//*[@id='login-password-input']")
     public WebElement passwordAlani;
