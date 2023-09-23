@@ -38,14 +38,14 @@ public class TrendyolTask {
         extentReports.setSystemInfo("Application","Trendyol");
         extentReports.setSystemInfo("Browser","Chrome");
         extentReports.setSystemInfo("Hazirlayan","Fatih Izmir");
-        extentHtmlReporter.config().setDocumentTitle("OPTİİM Task Raporu");
+        extentHtmlReporter.config().setDocumentTitle("OTask Raporu");
         extentHtmlReporter.config().setReportName("Fatih Izmir Task Raporu");
 
         //raporu projeme eklemek icin
         extentReports.attachReporter(extentHtmlReporter);
 
         extentTest = extentReports.createTest("Fatih Izmir Trendyol Test Raporu",
-                "OPTIIM / Hakan KAYIS Tarafından Verilen Task Raporu");
+                "Task Raporu");
         extentTest.pass("Test Basarili");
 
         Driver.getDriver().get(ConfigReader.getProperty("URL2"));
